@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#game {
+    width: 665px;
+    height: 500px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+#canvas_output {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -5;
+}
+
+#block {
+    width:  60px;
+    height: 500px;
+    background-color: green;
+    position: relative;
+    left: 665px;
+    animation: block 3s infinite linear;
+}
+
+@keyframes block {
+    0%{left:665px}
+    100%{left:-50px}
+}
+
+#hole {
+    width: 60px;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    left: 665px;
+    top: -500px;
+    animation: block 3s infinite linear;
+}
+
+body{
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+#circle{
+    position:absolute;
+    transform:translate(-50%,-50%);
+    background-color:blue;
+    height:20px;
+    width:20px;
+    border-radius:50%;
+    border:2px solid black;
+}
+
+#start {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 15%;
+}
+
+#start button {
+    margin: 0 20px;
+    width: 80%;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#lose {
+    display: none;
+}
+
+#start button:hover {
+    background: #ddd;
+    color: black;
+}

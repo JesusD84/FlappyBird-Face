@@ -1,0 +1,32 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opencv JS</title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="js/opencv.js" onload="openCvReady();"></script>
+    <script src="js/utils.js"></script>
+</head>
+
+<body>
+    <video id="cam_input" height="500" width="665" style="display: none;"></video>
+    
+    <div id="start">
+        <button>Empezar</button>
+    </div>
+    <div id="lose">
+        <p>Upsss... perdiste</p>
+    </div>
+
+    <div id="game">
+        <div id="block"></div>
+        <div id="hole"></div>
+        <div id="circle"></div>
+    </div>
+
+    <canvas id="canvas_output"></canvas>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
